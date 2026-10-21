@@ -4,12 +4,12 @@
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/jcatalan007/SwiftUI-Cookbook-4th-Edition.git
+   git clone https://github.com/PacktPublishing/SwiftUI-Cookbook-Fourth-Edition.git
    ```
 
 2. Navigate to the chapter and recipe you are reading. Each recipe has its own folder (`recipeNN/`) inside the chapter folder, containing an Xcode project named after the app you will build. You can find the app name in the **Getting ready** section of each recipe:
    ```bash
-   cd SwiftUI-Cookbook-4th-Edition/ch01/recipe01/BasicViews
+   cd SwiftUI-Cookbook-Fourth-Edition/ch01/recipe01/BasicViews
    ```
 
 3. Open the `.xcodeproj` file in Xcode:
