@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "Noise-cancelling headphones with 30-hour battery life.",
+      "price": 249.99,
+      "category": "electronics",
+      "image_url": "https://picsum.photos/seed/headphones/400/400",
+      "rating": 4.7,
+      "review_count": 1284,
+      "release_date": "2024-03-15",
+      "is_available": true,
+      "tags": ["wireless", "audio", "noise-cancelling"]
+    },
+    {
+      "id": 2,
+      "name": "SwiftUI Cookbook 3rd Edition",
+      "description": "SwiftUI for iOS development.",
+      "price": 44.99,
+      "category": "books",
+      "image_url": null,
+      "rating": 4.7,
+      "review_count": 46,
+      "release_date": "2023-12-26",
+      "is_available": true,
+      "tags": ["programming", "Swift", "SwiftUI", "iOS"]
+    },
+    {
+      "id": 3,
+      "name": "Organic Coffee Beans",
+      "description": "Fair-trade organic coffee beans from Colombia.",
+      "price": 18.50,
+      "category": "food",
+      "image_url": "https://picsum.photos/seed/coffee/400/400",
+      "rating": 4.5,
+      "review_count": 893,
+      "release_date": "2024-01-10",
+      "is_available": false,
+      "tags": ["organic", "coffee", "fair-trade"]
+    },
+    {
+      "id": 4,
+      "name": "MacBook Air",
+      "description": "Thin and light laptop with all-day battery life.",
+      "price": 899.00,
+      "category": "electronics",
+      "image_url": "https://picsum.photos/seed/macbook/400/400",
+      "rating": 4.8,
+      "review_count": 2057,
+      "release_date": "2025-03-12",
+      "is_available": true,
+      "tags": ["laptop", "apple", "MacBook"]
+    },
+    {
+      "id": 5,
+      "name": "Running Jacket",
+      "description": "Lightweight waterproof jacket for outdoor running.",
+      "price": 89.00,
+      "category": "clothing",
+      "image_url": "https://picsum.photos/seed/jacket/400/400",
+      "rating": 4.3,
+      "review_count": 347,
+      "release_date": "2024-09-20",
+      "is_available": true,
+      "tags": ["running", "outdoor", "waterproof"]
+    }
+  ],
+  "total_count": 5,
+  "page": 1
+}

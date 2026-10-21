@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Xcode per-user data
+**/DerivedData/
+**/xcuserdata/
+
+# Build products
+build/
+
+# Swift Package Manager
+.build/
+*.resolved

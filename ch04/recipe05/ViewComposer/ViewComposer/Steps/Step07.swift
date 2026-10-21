@@ -1,0 +1,92 @@
+//
+//  Step07.swift
+//  ViewComposer
+//
+//  Created by Juan Catalan on 6/19/26.
+//
+
+import SwiftUI
+
+/// Step 7: Implemented extraContent with conditional @ViewBuilder
+/// Book recipe step: 7
+struct Step07View: View {
+  @State private var showExtras = true
+
+  var body: some View {
+    NavigationStack {
+      ScrollView {
+        VStack(spacing: 24) {
+          profileHeader
+          InfoCard(title: "Stats",
+                   icon: "chart.bar.fill", iconColor: .green) {
+            HStack(spacing: 24) {
+              StatItem(value: "42", label: "Projects")
+              StatItem(value: "128", label: "Commits")
+              StatItem(value: "15", label: "PRs")
+            }
+            .frame(maxWidth: .infinity)
+          }
+          InfoCard(title: "Skills",
+                   icon: "star.fill", iconColor: .yellow) {
+            skillBadges
+          }
+          extraContent
+        }
+        .padding()
+      }
+      .navigationTitle("Profile")
+      .background(Color(.systemGroupedBackground))
+    }
+  }
+
+  @ViewBuilder
+  private var profileHeader: some View {
+    VStack(spacing: 8) {
+      Image(systemName: "person.circle.fill")
+        .font(.system(size: 72))
+        .foregroundStyle(.blue)
+      Text("Jane Developer")
+        .font(.title2)
+        .fontWeight(.bold)
+      Text("iOS Engineer")
+        .font(.subheadline)
+        .foregroundStyle(.secondary)
+    }
+    .cardStyle()
+  }
+
+  private var skillBadges: some View {
+    Group {
+      HStack(spacing: 8) {
+        Text("SwiftUI")
+        Text("UIKit")
+        Text("Combine")
+      }
+      HStack(spacing: 8) {
+        Text("Swift")
+        Text("Xcode")
+      }
+    }
+    .font(.caption)
+    .fontWeight(.semibold)
+  }
+
+  @ViewBuilder
+  private var extraContent: some View {
+    if showExtras {
+      InfoCard(title: "Recent Activity", icon: "clock.fill") {
+        VStack(alignment: .leading, spacing: 8) {
+          Text("Merged PR #42: Fix navigation bug")
+          Text("Opened issue: Dark mode support")
+          Text("Pushed 3 commits to main")
+        }
+        .font(.subheadline)
+        .foregroundStyle(.secondary)
+      }
+    }
+  }
+}
+
+#Preview {
+  Step07View()
+}
